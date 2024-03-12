@@ -1,3 +1,9 @@
 n = int(input())
 
-print(n * n )
+ans = n*n
+
+if ans < 5:
+    print(ans)
+    print("tiny")
+else:
+    print(ans)
