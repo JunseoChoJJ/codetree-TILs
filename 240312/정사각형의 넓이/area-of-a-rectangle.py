@@ -2,7 +2,7 @@ n = int(input())
 
 ans = n*n
 
-if ans < 5:
+if n < 5:
     print(ans)
     print("tiny")
 else:
