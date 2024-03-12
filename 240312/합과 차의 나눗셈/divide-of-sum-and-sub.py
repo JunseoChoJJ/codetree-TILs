@@ -3,5 +3,6 @@ a,b = map(int, input().split())
 total = a + b
 subtraction = a - b
 ans = total / subtraction
-num = round(ans, 2)
-print(num)
+f = f"{ans:.2f}"
+
+print(f)
