@@ -7,6 +7,8 @@ def prime(num):
     return True
 
 total = 0
+if a == b:
+    return 0
 for i in range(a, b + 1):
     if prime(i):
         total += i
