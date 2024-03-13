@@ -15,7 +15,7 @@ def check(n1, n2,a,o,c):
         ans = n1 * n2
         print(a + " " + o + " " + c + " = " + str(ans) )
     elif o == "/":
-        ans = n1 / n2
+        ans = n1 // n2
         print(a + " " + o + " " + c + " = " + str(ans) )
     else:
         return False
