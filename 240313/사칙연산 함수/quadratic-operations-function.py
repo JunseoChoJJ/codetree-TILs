@@ -18,8 +18,6 @@ def check(n1, n2,a,o,c):
         ans = n1 // n2
         print(a + " " + o + " " + c + " = " + str(ans) )
     else:
-        return False
-if check(n1, n2,a,o,c):
-    continue
-else:
-    print("False")
+        print("False")
+        
+check(n1, n2,a,o,c)
