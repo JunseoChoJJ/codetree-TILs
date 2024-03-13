@@ -8,10 +8,11 @@ def prime(num):
 
 total = 0
 if a == b:
-    return 0
-for i in range(a, b + 1):
-    if prime(i):
-        total += i
-    else:
-        continue
-print(total)
+    print(total)
+else:
+    for i in range(a, b + 1):
+        if prime(i):
+            total += i
+        else:
+            continue
+    print(total)
