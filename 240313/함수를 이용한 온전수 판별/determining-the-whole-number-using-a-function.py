@@ -7,7 +7,7 @@ def check(num):
         return False
     if num % 3 == 0 and num % 9 != 0:
         return False
-
+    return True
 cnt = 0
 for i in range(a, b+1):
     if check(i):
