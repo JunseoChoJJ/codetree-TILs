@@ -2,7 +2,7 @@ n = int(input())
 
 def rec(n):
     if n == 1:
-        return
+        return 0
 
     if n % 2 == 0:
         return rec(n // 2) + 1
