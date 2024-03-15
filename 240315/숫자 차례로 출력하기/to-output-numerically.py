@@ -11,8 +11,9 @@ def check1(n):
 def check2(n):
     if n == 0:
         return
+
     print(n, end = " ")
-    check1(n - 1)
+    check2(n - 1)
 
 check1(n)
 print()
