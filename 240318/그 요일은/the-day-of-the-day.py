@@ -22,6 +22,6 @@ day_left = num % 7
 day = num // 7
 cnt += day
 
-if check >= day_left:
+if check <= day_left:
     cnt += 1
 print(cnt)
