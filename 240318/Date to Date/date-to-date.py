@@ -1,6 +1,6 @@
 m1,d1,m2,d2 = map(int, input().split())
 
-ans = 0
+ans = 1
 month = m1
 day = d1
 
