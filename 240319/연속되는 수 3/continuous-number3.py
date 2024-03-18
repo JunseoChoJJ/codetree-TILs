@@ -12,4 +12,5 @@ for i in range(n):
         cnt = 1
     else:
         cnt += 1
+    tmp.append(cnt)
 print(max(tmp))
