@@ -6,6 +6,8 @@ cnt = 0
 tmp = 0
 
 for j in range(n):
+    if j == 0:
+        cnt = 1
     if j == 0 or a[j] != a[j-1]:
         if cnt > tmp:
             tmp = cnt
