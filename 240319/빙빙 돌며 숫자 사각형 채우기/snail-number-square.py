@@ -5,8 +5,8 @@ dx = [1,0,-1,0]
 
 direction = 0
 
-board = [[0] * n for _ in range(m)]
-ans = [[0] * n for _ in range(m)]
+board = [[0] * m for _ in range(n)]
+ans = [[0] * m for _ in range(n)]
 
 y, x = 0, 0
 board[y][x] = 1
@@ -21,8 +21,7 @@ for i in range(2, n*m + 1):
         board[ny][nx] = i
         ans[ny][nx] = 1
         y = ny
-        x = nx
-        
+        x = nx   
     else:
         board[ny][nx] = i
         ans[ny][nx] = 1
