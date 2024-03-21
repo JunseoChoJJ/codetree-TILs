@@ -4,7 +4,7 @@ n_list = []
 for _ in range(n):
     n_list.append(int(input()))
 
-ans = 0
+ans = -1
 
 def check(n1, n2, n3):
     if (n1 % 10 + n2 % 10 + n3 % 10) > 9:
