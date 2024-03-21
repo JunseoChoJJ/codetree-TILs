@@ -6,7 +6,8 @@ def check(string):
     string = string[::-1]
     for i in range(len(string)):
         if string[i] == '1':
-            num += 2**i 
+            if len(string) != 1:
+                num += 2**i 
     return num
 
 for i in range(len(string)):
