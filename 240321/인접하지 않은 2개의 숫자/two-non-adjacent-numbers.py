@@ -6,5 +6,5 @@ for i in range(len(n_list)):
     total = 0
     for j in range(i+2, len(n_list)):
         total = n_list[i] + n_list[j]
-    ans = max(ans, total)
+        ans = max(ans, total)
 print(ans)
