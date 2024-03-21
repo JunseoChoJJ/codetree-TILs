@@ -14,11 +14,11 @@ def check(n1, n2, n3):
     return check(n1 // 10, n2 //10, n3 // 10)
 
 for i in range(n):
-    total = 0
+    
     for j in range(i+1, n):
         for k in range(j+1, n):
             if check(n_list[i],n_list[j], n_list[k]):
-                total += n_list[i] + n_list[j] + n_list[k]
+                total = n_list[i] + n_list[j] + n_list[k]
                 ans = max(ans, total)
 
 print(ans)
