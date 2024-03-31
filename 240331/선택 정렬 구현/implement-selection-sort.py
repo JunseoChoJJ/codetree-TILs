@@ -5,7 +5,7 @@ def insertion(n_list):
 
     for i in range(len(n_list) - 1):
         mins = i
-        for j in range(i, len(n_list) - 1):
+        for j in range(i + 1, len(n_list) - 1):
             if n_list[j] < n_list[mins]:
                 mins = j
         tmp = n_list[i]
