@@ -7,7 +7,7 @@ for _ in range(n):
     a += 100
     b += 100
     
-    for i in range(a, b+1):
+    for i in range(a, b):
         n_list[i] += 1
 
-print(max(n_list) - 1)
+print(max(n_list))
