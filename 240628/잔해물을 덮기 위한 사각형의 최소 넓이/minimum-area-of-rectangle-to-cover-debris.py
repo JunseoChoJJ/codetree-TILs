@@ -28,6 +28,10 @@ for x in range(2001):
             min_y = min(min_y, y)
 
 
+if min_x == 2002:
+    min_x = 1
+if min_y == 2002:
+    min_y = 1
 x = max_x - min_x + 1
 y = max_y - min_y + 1
 print(x*y)
