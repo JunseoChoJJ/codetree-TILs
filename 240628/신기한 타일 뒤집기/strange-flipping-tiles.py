@@ -12,7 +12,7 @@ for _ in range(n):
         distance += offset
         for i in range(offset, distance):
             n_list[i] = 1
-        offset = distance
+        offset = distance - 1
     else:
         distance = offset - distance
         for i in range(distance + 1, offset + 1):
