@@ -15,9 +15,9 @@ for _ in range(n):
         offset = distance
     else:
         distance = offset - distance
-        for i in range(distance, offset):
+        for i in range(distance + 1, offset + 1):
             n_list[i] = 2
-        offset = distance
+        offset = distance + 1
 
 cnt1 = 0
 cnt2 = 0
