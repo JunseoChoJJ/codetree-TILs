@@ -27,5 +27,7 @@ for num in n_list:
         cnt1 += 1
     elif num == 1:
         cnt2 += 1
+    else:
+        continue
 
 print(cnt1, cnt2)
