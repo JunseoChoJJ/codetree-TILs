@@ -1,5 +1,5 @@
 n, m = map(int, input().split())
-board = [[0] * m for _ in range(n)]
+board = [[0] * n for _ in range(n)]
 
 dy = [0,0,-1,1]
 dx = [-1,1,0,0]
@@ -14,7 +14,7 @@ for _ in range(m):
         nr = r + dy[i]
         nc = c + dx[i]
 
-        if nr < 0 or nc < 0 or nr >= n or nc >= m: continue
+        if nr < 0 or nc < 0 or nr >= n or nc >= n: continue
         if board[nr][nc] == 1:
             cnt += 1
     if cnt == 3:
