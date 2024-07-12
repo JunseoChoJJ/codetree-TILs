@@ -30,7 +30,7 @@ for _ in range(n*m):
         y = ny
         x = nx
 
-    if start == 25:
+    if start == 26:
         start = 0
 
 for i in range(n):
