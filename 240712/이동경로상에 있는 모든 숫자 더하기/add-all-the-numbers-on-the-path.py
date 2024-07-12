@@ -25,13 +25,7 @@ for i in range(t):
         nx = x + dx[dirs]
 
         if ny < 0 or nx < 0 or ny >= n or nx >= n: continue
-        if visited[ny][nx] == 0:
-            ans += board[ny][nx]
-            y = ny
-            x = nx
-            visited[ny][nx] = 1
-        else:
-            y = ny
-            x = nx
-            visited[ny][nx] = 1
+        ans += board[ny][nx]
+        y = ny
+        x = nx
 print(ans)
