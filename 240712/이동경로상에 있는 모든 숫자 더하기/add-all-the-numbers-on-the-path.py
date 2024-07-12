@@ -27,8 +27,11 @@ for i in range(t):
         if ny < 0 or nx < 0 or ny >= n or nx >= n: continue
         if visited[ny][nx] == 0:
             ans += board[ny][nx]
-        y = ny
-        x = nx
-        visited[ny][nx] = 1
-
+            y = ny
+            x = nx
+            visited[ny][nx] = 1
+        else:
+            y = ny
+            x = nx
+            visited[ny][nx] = 1
 print(ans)
