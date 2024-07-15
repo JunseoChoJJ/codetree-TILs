@@ -12,7 +12,7 @@ for i in range(1001):
         tb = n_list[j][1]
         if i < ta:
             cnt += c
-        elif i < tb:
+        elif i <= tb:
             cnt += g
         else:
             cnt += h
