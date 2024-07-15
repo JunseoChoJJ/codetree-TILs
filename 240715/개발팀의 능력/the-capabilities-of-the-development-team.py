@@ -17,5 +17,7 @@ for i in range(5):
                 sum3 = sum(n_list) - sum1 - sum2
                 if sum1 == sum2 or sum2 == sum3 or sum1 == sum3: continue
                 ans = min(ans, diff(sum1, sum2, sum3))
-
-print(ans)
+if ans == sys.maxsize:
+    print(-1)
+else:
+    print(ans)
