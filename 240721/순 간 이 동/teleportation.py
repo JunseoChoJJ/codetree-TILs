@@ -1,6 +1,6 @@
 a,b,x,y = map(int, input().split())
 
-first = b-a
+first = abs(b-a)
 second = abs(a-x) + abs(y-b)
 third = abs(a-y) + abs(x-b)
 
