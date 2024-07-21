@@ -10,8 +10,7 @@ def check(n_list):
 cnt = 0
 if check(n_list) == True:
     print(cnt)
-
-
-first = abs(n_list[0] - n_list[1])
-second = abs(n_list[2] - n_list[1])
-print(second - 1)
+else:
+    first = abs(n_list[0] - n_list[1])
+    second = abs(n_list[2] - n_list[1])
+    print(second - 1)
