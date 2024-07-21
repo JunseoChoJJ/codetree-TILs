@@ -16,16 +16,13 @@ for i in range(n):
 
 if quick == False:
     print(-1)
-cnt = 0
-
-for j in range(n):
-    if n_list[j] == ans:
-        hi = j
-        cnt+=1
-
-
-
-if cnt == 1:
-    print(hi+1)
 else:
-    print(-1)
+    cnt = 0
+    for j in range(n):
+        if n_list[j] == ans:
+            hi = j
+            cnt += 1
+    if cnt == 1:
+        print(hi+1)
+    else:
+        print(-1)
