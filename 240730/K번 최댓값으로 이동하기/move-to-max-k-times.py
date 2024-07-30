@@ -39,7 +39,7 @@ for _ in range(k):
         if check2 == True:
             break
         for j in range(n):
-            if board[i][j] == max_num:
+            if board[i][j] == max_num and visited[i][j] == 1:
                 startY = i+1
                 startX = j+1
                 check2 = True
