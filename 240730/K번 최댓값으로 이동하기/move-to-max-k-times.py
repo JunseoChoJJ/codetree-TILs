@@ -31,6 +31,7 @@ for l in range(k):
     visited[startY-1][startX-1] = 1
     while q:
         (nowY, nowX) = q.popleft()
+    
         for i in range(4):
             ny = nowY + dy[i]
             nx = nowX + dx[i]
@@ -41,7 +42,9 @@ for l in range(k):
             visited[ny][nx] = 1
             max_num = max(max_num, board[ny][nx])
             q.append((ny, nx))
-
+            
+    if max_num == -1:
+        check = False
     check2 = False
     for i in range(n): 
         if check2 == True:
