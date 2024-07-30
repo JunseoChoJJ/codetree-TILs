@@ -9,20 +9,8 @@ startY, startX = map(int, input().split())
 dy = [-1,1,0,0]
 dx = [0,0,-1,1]
 
-
-
-def startLocation(max_num):
-    arr=[]
-    for i in range(n): 
-        for j in range(n):
-            if board[i][j] == max_num:
-                return i,j
-
-check = True
-for l in range(k):
-    # cannot move before kth turn 
-    if check == False:
-        break
+for _ in range(k):
+    
     q = deque([(startY-1, startX-1)])
     first = board[startY-1][startX-1]
     
@@ -44,7 +32,8 @@ for l in range(k):
             q.append((ny, nx))
             
     if max_num == -1:
-        check = False
+        break
+    
     check2 = False
     for i in range(n): 
         if check2 == True:
