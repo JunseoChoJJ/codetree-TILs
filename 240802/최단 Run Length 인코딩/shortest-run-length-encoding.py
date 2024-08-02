@@ -1,3 +1,4 @@
+# 15minutes
 string=list(input())
 n = len(string)
 
