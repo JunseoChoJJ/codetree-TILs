@@ -1,3 +1,5 @@
+# tmp 차이 알아보기
+
 n = int(input())
 board=[]
 for _ in range(n):
