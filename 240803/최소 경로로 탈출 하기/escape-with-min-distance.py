@@ -10,12 +10,12 @@ dx = [0,0,-1,1]
 
 q = deque([(0, 0)])
 visited = [[0] * m for _ in range(n)]
-    
+board[0][0] = 0    
 while q:
     (nowY, nowX) = q.popleft()
-
+    
     if nowY == (n-1) and nowX == (m-1):
-        print(board[nowY][nowX] - 1)
+        print(board[nowY][nowX])
         break
     for i in range(4):
         ny = nowY + dy[i]
