@@ -8,6 +8,9 @@ tmp_row = 1
 check = False
 
 while True:
+    if tmp_row == 1:
+        board[0][0] = 1
+        break
     if check == True or tmp_row == n:
         break
 
