@@ -8,7 +8,7 @@ tmp_row = 1
 check = False
 
 while True:
-    if check == True:
+    if check == True or tmp_row == n:
         break
 
     for col in range(k-1, k+m-1):
