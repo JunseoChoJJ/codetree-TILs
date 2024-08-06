@@ -15,7 +15,7 @@ dx = [1,0,-1,0]
 direction = 0
 
 while True:
-    if time > n * n:
+    if time > n * n * n:
         break
 
     ny = y + dy[direction]
@@ -38,7 +38,7 @@ while True:
         direction = direction % 4
         check_y = ny + dy[direction]
         check_x = nx + dx[direction]
-        if board[check_y][check_x] != '#':
+        if board[check_y][check_x] == '.':
             y = check_y
             x = check_x
             time += 2
