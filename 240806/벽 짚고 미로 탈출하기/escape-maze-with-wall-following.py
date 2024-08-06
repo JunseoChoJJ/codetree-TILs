@@ -15,7 +15,7 @@ dx = [1,0,-1,0]
 direction = 0
 
 while True:
-    if time > n * n * n:
+    if time > n * n:
         break
 
     ny = y + dy[direction]
@@ -45,7 +45,11 @@ while True:
         else:
             y = ny
             x = nx
-            direction -= 1
+
+            if direction == 0:
+                    direction = 3
+            else:
+                direction -= 1
             time += 1
 
 
