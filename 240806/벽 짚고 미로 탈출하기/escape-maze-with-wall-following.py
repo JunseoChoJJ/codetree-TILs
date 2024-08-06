@@ -13,9 +13,10 @@ check = False
 dy = [0,1,0,-1]
 dx = [1,0,-1,0]
 direction = 0
+cnt = 0
 
 while True:
-    if time > n * n:
+    if time > n * n or cnt == 4:
         break
 
     ny = y + dy[direction]
@@ -27,7 +28,7 @@ while True:
         break
     elif board[ny][nx] == '#':
         direction = (direction + 3)  % 4
-
+        cnt += 1
     
     # 2nd case
     
@@ -50,7 +51,7 @@ while True:
             else:
                 direction -= 1
             time += 1
-
+        cnt = 0
 
 if check == False:
     print(-1)
