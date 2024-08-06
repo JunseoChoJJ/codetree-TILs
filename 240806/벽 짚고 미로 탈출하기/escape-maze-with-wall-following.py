@@ -20,17 +20,17 @@ while True:
 
     ny = y + dy[direction]
     nx = x + dx[direction]
-
     # 1st case
-    if board[ny][nx] == '#':
+    if ny < 0 or nx < 0 or ny >= n or nx >= n:
+        time += 1
+        check = True
+        break
+    elif board[ny][nx] == '#':
         direction = (direction + 3)  % 4
 
     
     # 2nd case
-    elif ny < 0 or nx < 0 or ny >= n or nx >= n:
-        time += 1
-        check = True
-        break
+    
 
     # 3rd case and 4th case
     else: 
@@ -45,7 +45,6 @@ while True:
         else:
             y = ny
             x = nx
-
             if direction == 0:
                     direction = 3
             else:
