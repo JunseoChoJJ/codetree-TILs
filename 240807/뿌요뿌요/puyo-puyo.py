@@ -34,8 +34,8 @@ for i in range(n):
         if visited[i][j] == 0:
             cnt = 1
             dfs(i, j)
+            block[board[i][j]] = cnt
             if cnt >= 4:
-                block[board[i][j]] = cnt
                 blcok_cnt += 1
 max_index=0
 max_num = 0
