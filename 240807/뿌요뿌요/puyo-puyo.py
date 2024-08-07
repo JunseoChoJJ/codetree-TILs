@@ -28,16 +28,15 @@ def dfs(y, x):
 block=[0] * 101
 
 
-
+blcok_cnt = 0
 for i in range(n):
     for j in range(n):
         if visited[i][j] == 0:
             cnt = 1
             dfs(i, j)
             if cnt >= 4:
-                
                 block[board[i][j]] = cnt
-
+                blcok_cnt += 1
 max_index=0
 max_num = 0
 for i in range(101):
@@ -45,4 +44,4 @@ for i in range(101):
         max_num = block[i]
         max_index = i
 
-print(max_index, max_num)
+print(blcok_cnt, max_num)
