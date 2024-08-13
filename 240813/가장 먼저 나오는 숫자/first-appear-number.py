@@ -8,7 +8,7 @@ def binary_search(target):
 
     left = 0 
     right = n-1
-    min_idx = n
+    min_idx = n-1
 
     while left <= right:
         mid = (left + right) // 2
