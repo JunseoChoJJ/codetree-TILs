@@ -9,6 +9,7 @@ def binary_search(a, b):
         left = a
         right = b
         
+        if num > right or num < left: continue
         
         while left <= right:
             mid = (left + right) // 2    
