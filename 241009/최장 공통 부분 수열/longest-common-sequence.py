@@ -1,9 +1,9 @@
 a = list(input())
 b = list(input())
 
-length = len(a)
-
-dp = [[0] * length for _ in range(length)]
+lengthA = len(a)
+lengthB = len(b)
+dp = [[0] * lengthA for _ in range(lengthB)]
 
 
 def initialize():
@@ -12,13 +12,13 @@ def initialize():
     else:
         dp[0][0] = 0
     
-    for i in range(1, length):
+    for i in range(1, lengthB):
         if a[0] == b[i]:
             dp[i][0] = 1
         else:
             dp[i][0] = dp[i-1][0]
 
-    for j in range(1, length):
+    for j in range(1, lengthA):
         if a[j] == b[0]:
             dp[0][j] = 1
         else:
@@ -28,12 +28,12 @@ initialize()
 
 
 
-for i in range(1, length):
-    for j in range(1, length):
+for i in range(1, lengthB):
+    for j in range(1, lengthA):
         if b[i] == a[j]:
             dp[i][j] = dp[i-1][j-1] + 1
         else:
             dp[i][j] = max(dp[i-1][j], dp[i][j-1])
 
 
-print(dp[length-1][length-1])
+print(dp[lengthA-1][lengthB-1])
