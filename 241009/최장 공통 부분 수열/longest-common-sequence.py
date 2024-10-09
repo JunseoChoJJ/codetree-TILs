@@ -36,4 +36,4 @@ for i in range(1, lengthB):
             dp[i][j] = max(dp[i-1][j], dp[i][j-1])
 
 
-print(dp[lengthA-1][lengthB-1])
+print(dp[lengthB-1][lengthA-1])
