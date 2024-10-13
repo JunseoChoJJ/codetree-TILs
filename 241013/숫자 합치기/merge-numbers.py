@@ -5,7 +5,7 @@ total = 0
 
 while True:
     if len(n_list) == 2:
-        total += sum(n_list)
+        total += n_list[0] + n_list[1]
         break
     n_list.sort()
     to = n_list[0] + n_list[1]
