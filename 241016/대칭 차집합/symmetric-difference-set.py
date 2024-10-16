@@ -14,4 +14,6 @@ for i in range(len(bList)):
 length = len(bigList)
 intersection = set(bigList)
 
-print(length - len(intersection))
+
+ans = length - len(intersection)
+print(length - 2 * ans)
