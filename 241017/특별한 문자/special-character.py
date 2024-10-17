@@ -11,15 +11,15 @@ for char in string:
 
 
 check = False
-ans = []
+
 for key, value in di.items():
     if value == 1:
-        ans.append(key)
+        ans = key
         check = True
+        break
 
-ans.sort()
 
 if check == False:
     print("None")
 else:
-    print(ans[0])
+    print(ans)
