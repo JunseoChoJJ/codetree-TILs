@@ -16,7 +16,7 @@ for key, value in di.items():
     if value == 1:
         ans.append(key)
         check = True
-print(ans)
+
 ans.sort()
 
 if check == False:
