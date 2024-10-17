@@ -9,8 +9,7 @@ for num in nList:
 
 
 while True:
-    if len(pq) == 1:
-        print(-pq[0])
+    if len(pq) < 2:
         break
 
     first = pq[0]
@@ -21,3 +20,8 @@ while True:
     diff = first - second
     if diff != 0:
         heapq.heappush(pq, diff)
+        
+if not pq:
+    print(-1)
+else:
+    print(-pq[0])
