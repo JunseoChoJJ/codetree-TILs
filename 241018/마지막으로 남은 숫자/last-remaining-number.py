@@ -1,3 +1,5 @@
+# 다시 풀어보기
+
 import heapq
 n = int(input())
 nList = list(map(int, input().split()))
