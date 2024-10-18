@@ -7,7 +7,7 @@ n = int(input())
 
 for _ in range(n):
     command = list(map(str, input().split(" ")))
-
+    
     if command[0] == "add":
         x = command[1]
         s.add(x)
