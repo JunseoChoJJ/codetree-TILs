@@ -1,3 +1,4 @@
+import sys
 n = int(input())
 
 
@@ -15,14 +16,15 @@ def isPossible(maxSum):
 
     return maxSum - total
 
+ans = sys.maxsize
+
 while left <= right:
     mid = (left + right) // 2
-
-    if isPossible(mid) == n:
-        print(mid)
-        break
-    
-    if isPossible(mid) < n:
-        left = mid + 1
-    else:
+    if isPossible(mid) >= n:
+        ans = min(ans, mid)
         right = mid - 1
+    else:
+        left = mid + 1
+    
+
+print(ans)
