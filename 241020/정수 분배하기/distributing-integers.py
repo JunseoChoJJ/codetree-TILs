@@ -26,14 +26,11 @@ ans = 0
 
 while left <= right:
     mid = (left + right) // 2
-    if isPossible(mid) == m:
+    if isPossible(mid) >= m:
         ans = max(ans, mid)
         left = mid + 1
-    
-    if isPossible(mid) < m:
-        right = mid - 1
     else:
-        left = mid + 1
+        right = mid - 1
     
 
 print(ans)
