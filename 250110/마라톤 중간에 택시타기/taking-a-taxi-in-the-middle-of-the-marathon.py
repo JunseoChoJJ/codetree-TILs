@@ -1,3 +1,4 @@
+import sys
 n = int(input())
 points = [tuple(map(int, input().split())) for _ in range(n)]
 x = [p[0] for p in points]
@@ -40,11 +41,11 @@ for j in range(n-1,-1,-1):
 
 
 #main
-ans = 0
+ans = sys.maxsize
 for i in range(1, n-1):
     p = n - i - 2
     diff = abs(x[i+1] - x[i-1]) + abs(y[i+1] - y[i-1]) 
     value = l[i-1] + diff + r[p] 
     
-    ans = max(ans, value)
+    ans = min(ans, value)
 print(ans)
