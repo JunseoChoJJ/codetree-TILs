@@ -3,19 +3,18 @@ n = int(input())
 words = [input() for _ in range(n)]
 
 # Please write your code here.
-d = {}
+
 sd = SortedDict()
 for word in words:
-    if word in d:
-        d[word] += 1
+    if word in sd:
+        sd[word] += 1
     else:
-        d[word] = 1
+        sd[word] = 1
 
-
-for key, value in d.items():
-    percentile = f"{value / n * 100:.4f}"
-
-    sd[key] = percentile
 
 for key, value in sd.items():
-    print(key, value)
+    percentile = f"{value / n * 100:.4f}"
+
+    print(f"{key} {percentile}")
+
+
