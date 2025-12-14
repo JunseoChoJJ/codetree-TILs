@@ -1,7 +1,6 @@
 from sortedcontainers import SortedSet
 n = int(input())
-command = []
-x = []
+
 
 sd = SortedSet()
 
@@ -9,8 +8,6 @@ for _ in range(n):
     line = input().split()
     
     command = line[0]
-    
-    
     if command == "add":
         value = int(line[1])
         sd.add(value)
@@ -30,7 +27,6 @@ for _ in range(n):
         else:
             print("None")
     elif command == "upper_bound":
-        
         value = int(line[1])
         if value < sd[-1]:
             print(sd[sd.bisect_right(value)])
