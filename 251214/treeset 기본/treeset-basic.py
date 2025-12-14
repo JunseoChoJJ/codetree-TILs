@@ -25,16 +25,24 @@ for _ in range(n):
             print("false")
     elif command == "lower_bound":
         value = int(line[1])
-        if value <= sd[-1]:
-            print(sd[sd.bisect_left(value)])
-        else:
+        if len(sd) == 0:
             print("None")
+        else:
+            idx = sd.bisect_left(value)
+            if idx == len(sd):
+                print("None")
+            else:
+                print(sd[idx])
     elif command == "upper_bound":
         value = int(line[1])
-        if value < sd[-1]:
-            print(sd[sd.bisect_right(value)])
-        else:
+        if len(sd) == 0:
             print("None")
+        else:
+            idx = sd.bisect_right(value)
+            if idx == len(sd):
+                print("None")
+            else:
+                print(sd[idx])
     elif command == "largest":
         if len(sd) == 0:
             print("None")
