@@ -10,7 +10,10 @@ for _ in range(n):
     command = line[0]
     if command == "add":
         value = int(line[1])
-        sd.add(value)
+        if value in sd:
+            continue
+        else:
+            sd.add(value)
     elif command == "remove":
         value = int(line[1])
         sd.remove(value)
