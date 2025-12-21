@@ -13,7 +13,11 @@ for num in arr:
         continue
 
     firstNum = pq[0]
-    secondNum = pq[1]
-    thirdNum = pq[2]
+    heapq.heappop(pq)
+    secondNum = pq[0]
+    heapq.heappop(pq)
+    thirdNum = pq[0]
 
     print(firstNum * secondNum * thirdNum)
+    heapq.heappush(pq, firstNum)
+    heapq.heappush(pq, secondNum)
