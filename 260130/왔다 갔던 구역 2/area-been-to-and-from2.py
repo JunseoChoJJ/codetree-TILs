@@ -10,17 +10,24 @@ for _ in range(n):
 
 line = [0] * 2001
 offset = 1000
+
 for i in range(n):
     xi = x[i]
     di = dir[i]
+    
 
     for j in range(1, xi+1):
         if di == "R":
-            offset + j
-            line[offset] += 1
+            line[offset+j] += 1
+            
         else:
-            offset - j
-            line[offset] += 1
+            line[offset-j] += 1
+            
+            
+    if di == "R":
+        offset += xi
+    else:
+        offset -= xi
 
 cnt=0
 for num in line:
