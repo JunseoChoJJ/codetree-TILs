@@ -10,6 +10,7 @@ startX = 0
 startY = 0
 
 time = 0
+check = False
 for com in commands:
     if com == "L":
         direction = (direction -1 + 4) % 4
